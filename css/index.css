@@ -40,7 +40,7 @@ body{
     border-top: 2px solid #b55945;
     border-bottom: 2px solid #b55945;
     flex-basis: 400px;
-    height: 540px;
+    height: 560px;
     padding: 20px 35px;
 }
 
@@ -50,11 +50,11 @@ body{
     border-bottom: 2px solid #b55945;
     background-color: rgba(255, 255, 255, 0.30);
     box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1);    
-    height: 540px;
+    height: 560px;
     padding: 20px 30px;
     font-size: 26px;
-    
 }
+
 .lastests{
     font-size: 24px;
     padding: 20px;
