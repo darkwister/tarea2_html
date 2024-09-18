@@ -36,10 +36,29 @@ body{
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
     background: rgba(255, 255, 255, 0.30);
-    border: 1px solid #b55945;
+    border-left: 2px solid #b55945;
+    border-top: 2px solid #b55945;
+    border-bottom: 2px solid #b55945;
     flex-basis: 400px;
     height: 540px;
     padding: 20px 35px;
+}
+
+.calc-history{
+    border-top: 2px solid #b55945;
+    border-right: 2px solid #b55945;
+    border-bottom: 2px solid #b55945;
+    background-color: rgba(255, 255, 255, 0.30);
+    box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1);    
+    height: 540px;
+    padding: 20px 30px;
+    font-size: 26px;
+    
+}
+.lastests{
+    font-size: 24px;
+    padding: 20px;
+    color: #232323;
 }
 
 .pantalla{
