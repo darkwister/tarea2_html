@@ -1,0 +1,80 @@
+html{
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    align-items: center;
+    background: linear-gradient(360deg,#96a9c1,#fee1b8,#a4c5af);
+    /*
+    pallete, Credits to Matt.
+    https://lospec.com/palette-list/31
+    */
+    display: flex;
+    font-family: 'Space Mono', sans-serif;
+    /*
+    Font source: https://fonts.google.com/specimen/Space+Mono
+    */
+    font-display: swap;
+    height: inherit;
+    justify-content: center;
+}
+
+.layer{
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1);
+    color: #232323;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    background: rgba(255, 255, 255, 0.30);
+    border: 1px solid #b55945;
+    flex-basis: 400px;
+    height: 540px;
+    padding: 20px 35px;
+}
+
+.pantalla{
+    backdrop-filter: blur(3.5px);
+    -webkit-backdrop-filter: blur(3.5px);
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.01);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    color: #232323;
+    overflow: auto;
+    padding: 20px;
+    text-align: right;
+    width: 326px;
+    font-size: 35px;
+}
+
+.calc-boton-rows{
+    display: flex;
+    justify-content: space-between;
+    margin: 5% 0;
+}
+
+.calc-boton{
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    color: #232323;
+    flex-basis: 20%;
+    font-family: inherit;
+    font-size: 24px;
+    height: 65px;
+
+
+}
