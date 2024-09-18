@@ -36,9 +36,9 @@ body{
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
     background: rgba(255, 255, 255, 0.30);
-    border-left: 2px solid #b55945;
-    border-top: 2px solid #b55945;
-    border-bottom: 2px solid #b55945;
+    border-left: 2px solid #cae6d9;
+    border-top: 2px solid #cae6d9;
+    border-bottom: 2px solid #cae6d9;
     flex-basis: 400px;
     height: 560px;
     padding: 20px 35px;
@@ -60,9 +60,9 @@ body{
 }
 
 .calc-history{
-    border-top: 2px solid #b55945;
-    border-right: 2px solid #b55945;
-    border-bottom: 2px solid #b55945;
+    border-top: 2px solid #cae6d9;
+    border-right: 2px solid #cae6d9;
+    border-bottom: 2px solid #cae6d9;
     background-color: rgba(255, 255, 255, 0.30);
     box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1);    
     height: 560px;
