@@ -53,7 +53,7 @@ function handleSymbol(symbol){
             if(previusOperator === null){
                 return
             }
-            flushOperation(parseInt(buffer));
+            flushOperation(parseFloat(buffer));
             previusOperator = null;
             buffer = runningTotal;
             saveHistorial(buffer);
@@ -72,6 +72,11 @@ function handleSymbol(symbol){
         case '÷':
             handleMath(symbol);
             break;
+        case '.':
+            if(!buffer.includes('.')){
+                buffer += '.';
+            }
+            break;
     }
 }
 
@@ -80,7 +85,7 @@ function handleMath(symbol){
         return;
     }
 
-    const intBuffer = parseInt(buffer);
+    const intBuffer = parseFloat(buffer);
 
     if(runningTotal === 0){
         runningTotal = intBuffer;
