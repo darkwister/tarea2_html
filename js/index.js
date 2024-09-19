@@ -1,6 +1,7 @@
 let runningTotal = 0;
 let buffer = "0";
 let previusOperator;
+let previousBuffer;
 
 const pantalla = document.querySelector('.pantalla');
 
@@ -26,10 +27,10 @@ function updateHistory(){
     });
 }
 
-function saveHistorial(result){
+function saveHistorial(operation,result){
     let history = JSON.parse(localStorage.getItem('calcHistory')) || [];
 
-    history.push(result);
+    history.push(`${operation} = ${result}`);
 
     if (history.length > 10) {
         history.shift();
@@ -54,9 +55,12 @@ function handleSymbol(symbol){
                 return
             }
             flushOperation(parseFloat(buffer));
+
+            const operacionCompleta = `${previousBuffer} ${previusOperator} ${buffer}`;
+            saveHistorial(operacionCompleta, runningTotal);
+
             previusOperator = null;
             buffer = runningTotal;
-            saveHistorial(buffer);
             runningTotal = 0;
             break;
         case '←':
@@ -92,6 +96,8 @@ function handleMath(symbol){
     }else{
         flushOperation(intBuffer);
     }
+
+    previousBuffer = buffer;
     previusOperator = symbol;
     buffer = '0';
 }

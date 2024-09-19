@@ -57,6 +57,7 @@ body{
     text-align: right;
     width: 326px;
     font-size: 35px;
+    
 }
 
 .calc-history{
@@ -68,10 +69,13 @@ body{
     height: 560px;
     padding: 20px 30px;
     font-size: 26px;
+    box-sizing:border-box;
 }
 
 .lastests{
-    font-size: 24px;
+    font-size: 20px;
+    word-spacing: 4px;
+    line-height: 1.7;
     padding: 20px;
     color: #232323;
 }
