@@ -127,9 +127,15 @@ function init(){
         buttonClick(event.target.innerText);
     })
 }
+
 document.addEventListener('DOMContentLoaded', () => {
     const history = JSON.parse(localStorage.getItem('calcHistory')) || [];
     updateHistory(history);
+});
+
+document.getElementById('clearHistory').addEventListener('click', function(){
+    localStorage.clear();
+    updateHistory();
 });
 
 init();
